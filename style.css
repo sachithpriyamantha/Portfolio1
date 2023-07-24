@@ -168,6 +168,19 @@ background: var(--bg-color);
 padding: 13px 0;
 }
 
+.home .profession-box .profession:nth-child(1) i{
+    margin-right: 70px;
+}
+
+.home .profession-box .profession:nth-child(3)
+{
+    margin-left:  60px;
+}
+.home .profession-box .profession:nth-child(2),
+.home .profession-box .profession:nth-child(4){
+    padding-bottom: 20px;
+}
+
 .home .profession i{
     font-size: 3.8rem;
 
@@ -184,4 +197,16 @@ padding: 13px 0;
     height: 560px;
     border: 3px solid var(--main-color);
     border-radius: 50%;
+}
+.home .profession-container .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 384px solid var(--main-color);
+    border-right: 384px solid var(--main-color);
+    border-bottom: 384px solid var(--main-color);
+    border-left: 384px solid transparent;
+
 }
