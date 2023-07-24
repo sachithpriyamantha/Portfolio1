@@ -210,3 +210,12 @@ padding: 13px 0;
     border-left: 384px solid transparent;
 
 }
+
+.home-img img{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 42%;  
+  pointer-events: none;
+  
+}
