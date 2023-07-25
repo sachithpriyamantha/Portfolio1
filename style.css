@@ -34,8 +34,14 @@ body{
     display:flex;
     align-items: center;
     z-index: 100;
+    transition: 5s;
 
 }
+.header .sticky{
+background: var(--bg-color);
+box-shadow: 0 .1rem 1rem var(--shadow-color);
+}
+
 .logo {
     font-size: 2.5rem;
     color: var(--main-color);
@@ -50,6 +56,10 @@ body{
     font-weight: 500;
     margin-right: 3.5rem;
 }
+.header.sticky .navbar a{
+    color: var(--text-color);
+}
+
 .navbar a.active::before{
     content: '';
     position: absolute;
@@ -218,4 +228,32 @@ padding: 13px 0;
   width: 40%;  
   pointer-events: none;
   
+}
+span{
+    color: var(--main-color);
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background: red;
+}
+.about-img img{
+    width: 40vw;
+}
+.heading{
+    font-size: 4.5rem;
+    text-align: center;
+}
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.about-content h3{
+    font-size: 2rem;
+}
+.about-content p{
+    font-size: 1.6rem;
+margin: 3rem 0 3rem;
 }
