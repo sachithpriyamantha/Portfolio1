@@ -18,7 +18,7 @@
 }
 html{
     font-size: 62.5%;
-    overflow: hidden;
+    overflow: scroll;
 }
 body{
     background:var(--bg-color);
@@ -34,7 +34,7 @@ body{
     display:flex;
     align-items: center;
     z-index: 100;
-    transition: 5s;
+    transition: .5s;
 
 }
 .header .sticky{
