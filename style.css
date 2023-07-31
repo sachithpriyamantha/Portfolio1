@@ -84,6 +84,11 @@ box-shadow: 0 .1rem 1rem var(--shadow-color);
     cursor: pointer;
 
 }
+.header.sticky #darkMode-icon{
+    color: var(--text-color);
+    
+}
+
 section{
     min-height:100vh ;
     padding: 10rem 7% 2rem;
