@@ -20,6 +20,8 @@ html{
     font-size: 62.5%;
     overflow: scroll;
 }
+
+/*============Body===============*/
 body{
     background:var(--bg-color);
     color: var(--text-color);
@@ -96,6 +98,8 @@ section{
     align-items: center;
 }
 
+
+/*============Home===============*/
 .home .home-content{
     max-width: 44rem;
 }
@@ -250,6 +254,8 @@ padding: 13px 0;
 span{
     color: var(--main-color);
 }
+
+/*============About===============*/
 .about{
     display: flex;
     justify-content: center;
@@ -273,4 +279,21 @@ span{
 .about-content p{
     font-size: 1.6rem;
 margin: 2rem 0 3rem;
+}
+
+/*==============Service=================*/
+.services .services-container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 2rem;
+}
+.services-container .services-box{
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem var(--shadow-color);
+
 }
