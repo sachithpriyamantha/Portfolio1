@@ -268,7 +268,8 @@ span{
 .heading{
     font-size: 4.5rem;
     text-align: center;
-}
+  
+ }
 .about-content h2{
     text-align: left;
     line-height: 1.2;
@@ -278,16 +279,28 @@ span{
 }
 .about-content p{
     font-size: 1.6rem;
-margin: 2rem 0 3rem;
+    margin: 2rem 0 3rem;
 }
 
 /*==============Service=================*/
+
+
 .services .services-container{
+position:absolute;    
 display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 gap: 2rem;
+}
+.services .heading{
+    
+    
+    
+    margin-bottom: 35%;
+    
+    padding: 39%;
+    
 }
 .services-container .services-box{
     flex: 1 1 30rem;
@@ -298,9 +311,26 @@ gap: 2rem;
     text-align: center;
     border-top: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
+    transition: .5s ease;
 
+}
+.services-container .services-box:hover{
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
 }
 .services-box i{
     font-size: 7rem;
     color: var(--main-color);
+}
+
+.services-box h3{
+    font-size: 2.6rem;
+    transition: .5s ease;
+}
+.services-box:hover h3{
+    color: var(--main-color);
+}
+.services-box p{
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
 }
