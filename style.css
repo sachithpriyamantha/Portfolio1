@@ -359,12 +359,17 @@ span{
 .portfolio-container .portfolio-box{
     position: relative;
     display: flex;
+    width: 400px;
     border-radius: 2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     overflow: hidden;
 }
 .portfolio-box img{
     width: 100%;
+    transition: .5s ease;
+}
+.portfolio-box:hover img{
+    transform: scale(1.1);
 }
 .portfolio-box .portfolio-layer{
     position: absolute;
@@ -380,6 +385,11 @@ span{
     text-align: center;
     padding: 0 4rem;
     justify-content: center;
+    opacity: 0;
+    transition: .5s ease;
+}
+.portfolio-box:hover .portfolio-layer{
+    opacity: 1;
 }
 .portfolio-layer h4{
     font-size: 3rem;
@@ -398,4 +408,7 @@ span{
     background: var(--white-color);
     border-radius: 50%;
 
+}
+.portfolio-layer a i{
+    font-size: 2rem;
 }
