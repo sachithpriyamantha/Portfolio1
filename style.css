@@ -184,16 +184,16 @@ section{
 }
 
 .home .profession-box .profession{
-position: absolute;
-left: 0;
-display: flex;
-align-items: center;
-flex-direction: column;
-color: var(--main-color);
-transform: rotate(calc(360deg / 4 * var(--i)));
-transform-origin: 384px;
-background: var(--bg-color);
-padding: 13px 0;
+ position: absolute;
+ left: 0;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ color: var(--main-color);
+ transform: rotate(calc(360deg / 4 * var(--i)));
+ transform-origin: 384px;
+ background: var(--bg-color);
+ padding: 13px 0;
 }
 
 .home .profession-box .profession:nth-child(1) i{
@@ -286,7 +286,7 @@ span{
 
 
 .services .services-container{
-    position:absolute; 
+    position:absolute;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -294,10 +294,11 @@ span{
     gap: 2rem;
 }
 .services .heading{ 
-    
-    margin-bottom: -50%;
+    position: absolute;
+    margin-bottom: -60%;
     margin-top: -90%;
-    padding: 40%;
+    margin-left: 35%;
+   
    
 }
 .services-container .services-box{
@@ -331,4 +332,25 @@ span{
 .services-box p{
     font-size: 1.6rem;
     margin: 1rem 0 3rem;
+}
+
+/*==============Portfolio================*/
+.portfolio .heading{ 
+    position: absolute;
+    margin-bottom: -60%;
+    margin-top: -95%;
+    margin-left: 35%;   
+}
+.portfolio{
+    padding-bottom: 10rem;
+}
+.portfolio h2{
+    margin-bottom: 4rem;
+}
+.portfolio .portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 4rem;
+
 }
