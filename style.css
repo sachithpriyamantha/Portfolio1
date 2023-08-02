@@ -343,6 +343,7 @@ span{
 }
 .portfolio{
     padding-bottom: 10rem;
+   
 }
 .portfolio h2{
     margin-bottom: 4rem;
@@ -351,6 +352,50 @@ span{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap: 4rem;
+    gap: 10rem;
+    margin-bottom: -10%;
+
+}
+.portfolio-container .portfolio-box{
+    position: relative;
+    display: flex;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    overflow: hidden;
+}
+.portfolio-box img{
+    width: 100%;
+}
+.portfolio-box .portfolio-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    justify-content: center;
+}
+.portfolio-layer h4{
+    font-size: 3rem;
+
+}
+.portfolio-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--white-color);
+    border-radius: 50%;
 
 }
