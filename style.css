@@ -286,21 +286,19 @@ span{
 
 
 .services .services-container{
-position:absolute;    
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-gap: 2rem;
+    position:absolute; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
-.services .heading{
+.services .heading{ 
     
-    
-    
-    margin-bottom: 35%;
-    
-    padding: 39%;
-    
+    margin-bottom: -50%;
+    margin-top: -90%;
+    padding: 40%;
+   
 }
 .services-container .services-box{
     flex: 1 1 30rem;
