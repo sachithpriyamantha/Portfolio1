@@ -90,7 +90,11 @@ box-shadow: 0 .1rem 1rem var(--shadow-color);
     color: var(--text-color);
     
 }
-
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
 section{
     min-height:100vh ;
     padding: 10rem 7% 2rem;
@@ -335,20 +339,20 @@ span{
 }
 
 /*==============Portfolio================*/
-.portfolio .heading{ 
+.profession-container .heading{ 
     position: absolute;
     margin-bottom: -60%;
     margin-top: -95%;
     margin-left: 35%;   
 }
-.portfolio{
+.profession-container{
     padding-bottom: 10rem;
    
 }
-.portfolio h2{
+.profession-container h2{
     margin-bottom: 4rem;
 }
-.portfolio .portfolio-container{
+.profession-container .profession-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -356,7 +360,7 @@ span{
     margin-bottom: -10%;
 
 }
-.portfolio-container .portfolio-box{
+.profession-container .profession-container-box{
     position: relative;
     display: flex;
     width: 400px;
@@ -364,14 +368,14 @@ span{
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     overflow: hidden;
 }
-.portfolio-box img{
+.profession-container-box img{
     width: 100%;
     transition: .5s ease;
 }
-.portfolio-box:hover img{
+.profession-container-box:hover img{
     transform: scale(1.1);
 }
-.portfolio-box .portfolio-layer{
+.profession-container-box .profession-container-layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -388,18 +392,18 @@ span{
     opacity: 0;
     transition: .5s ease;
 }
-.portfolio-box:hover .portfolio-layer{
+.profession-container-box:hover .profession-container-layer{
     opacity: 1;
 }
-.portfolio-layer h4{
+.profession-container-layer h4{
     font-size: 3rem;
 
 }
-.portfolio-layer p{
+.profession-container-layer p{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
-.portfolio-layer a{
+.profession-container-layer a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -409,7 +413,7 @@ span{
     border-radius: 50%;
 
 }
-.portfolio-layer a i{
+.profession-container-layer a i{
     font-size: 2rem;
 }
 
@@ -554,4 +558,111 @@ span{
 .footer-iconTop a i{
     font-size: 2.4rem;
     color: #333;
+}
+
+/*=============Break Point================*/
+@media(max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+    .home .profession-container{
+        height: 85.8rem;
+    }
+    .home .profession-container .profession-box{
+        right: -12rem;
+        height: 85.8rem;
+    }
+    .home .profession-container .overlay{
+        right: -9rem;
+    }
+}
+
+@media(max-width: 1024px){
+    .header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .home .profession-container .profession-box{
+        right:22rem;
+    }
+    .home .profession-container .overlay{
+        right: -15rem;
+    }
+}
+
+@media(max-width: 991px){
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2){
+        color: var(--main-color);
+    }
+    .navbar a.active::before{
+        background: var(--main-color);
+        opacity: .7;
+    }
+
+
+    .home .home-content{
+        max-width: 50rem;
+    }
+    .home .profession-container .profession-box{
+        right: -45rem;
+    }
+    .home .profession-container .overlay{
+        right: -39.5rem;
+    }
+    .home-img img{
+        display: none;
+    }
+    .services,
+    .portfolio{
+        padding-bottom: 7rem;
+    }
+    .contact{
+        min-height: auto;
+    }
+    footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media(max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+    #darkMode-icon{
+        position: absolute;
+        right: 7rem;
+        font-size: 2.6rem;
+        color: var(--text-color);
+        margin-bottom: .1rem;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--text-color);
+    }
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2){
+        color: var(--text-color);
+    }
+    .navbar a.active{
+        color: var(--main-color);
+    }
+    .navbar a::before{
+        display: none;
+    }
+
 }
