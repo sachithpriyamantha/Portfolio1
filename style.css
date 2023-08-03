@@ -478,3 +478,11 @@ span{
 .testimonial-box .swiper-pagination-bullet-active{
     background: var(--main-color);
 }
+
+/*=================Contact=====================*/
+.contact .heading{ 
+    position: absolute;
+    margin-bottom: -60%;
+    margin-top: -95%;
+    margin-left: 35%;   
+}
