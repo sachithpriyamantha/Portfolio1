@@ -739,5 +739,34 @@ span{
         transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
         border-width: 23.9rem;
     }
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+
+    }
+    .about-content h2{
+        text-align: center;
+    }
+    .about-img img{
+        width: 70vw;
+        margin-top: -2rem;
+    }
+    .services h2,
+    .portfolio h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio .profession-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .testimonial-container .testimonial-wrapper{
+        padding: 5rem 0;
+    }
+    .testimonial-content .testimonial-slide{
+        padding: 3rem 2rem;
+    }
+    .testimonial-box .swiper-button-next,
+    .testimonial-box .swiper-button-prev{
+        display: none;
+    }
 
 }
