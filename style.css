@@ -770,3 +770,8 @@ span{
     }
 
 }
+@media (max-width: 617px){
+    .portfolio .profession-container{
+        grid-template-columns: 1fr;
+    }
+}
