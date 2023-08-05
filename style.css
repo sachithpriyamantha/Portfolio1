@@ -775,3 +775,11 @@ span{
         grid-template-columns: 1fr;
     }
 }
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+    #darkMode-icon{
+        right: 6rem;
+    }
+}
