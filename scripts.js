@@ -60,5 +60,16 @@ var swiper = new Swiper(".mySwiper", {
 
   darkModeIcon.onclick = () => {
     darkModeIcon.classList.toggle('bx-sun');
+    document.body.classList.toggle('dark-mode');
 
   };
+
+  /*======================Scroll reveal============================*/
+  ScrollReveal({ 
+    reset: true,
+    distance: '80px',
+    duration: 2000,
+    delav: 200 
+  });
+
+  ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
