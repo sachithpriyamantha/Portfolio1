@@ -358,20 +358,20 @@ span{
 }
 
 /*==============Portfolio================*/
-.profession-container .heading{ 
+.portfolio-container .heading{ 
     position: absolute;
     margin-bottom: -60%;
-    margin-top: -95%;
+    margin-top: -90%;
     margin-left: 35%;   
 }
-.profession-container{
+.portfolio-container{
     padding-bottom: 10rem;
    
 }
-.profession-container h2{
+.portfolio-container h2{
     margin-bottom: 4rem;
 }
-.profession-container .profession-container{
+.portfolio-container .profession-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -379,7 +379,7 @@ span{
     margin-bottom: -10%;
 
 }
-.profession-container .profession-container-box{
+.portfolio-container .profession-container-box{
     position: relative;
     display: flex;
     width: 400px;
@@ -387,14 +387,14 @@ span{
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     overflow: hidden;
 }
-.profession-container-box img{
+.portfolio-container-box img{
     width: 100%;
     transition: .5s ease;
 }
-.profession-container-box:hover img{
+.portfolio-container-box:hover img{
     transform: scale(1.1);
 }
-.profession-container-box .profession-container-layer{
+.portfolio-container-box .profession-container-layer{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -411,18 +411,18 @@ span{
     opacity: 0;
     transition: .5s ease;
 }
-.profession-container-box:hover .profession-container-layer{
+.portfolio-container-box:hover .profession-container-layer{
     opacity: 1;
 }
-.profession-container-layer h4{
+.portfolio-container-layer h4{
     font-size: 3rem;
 
 }
-.profession-container-layer p{
+.portfolio-container-layer p{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
 }
-.profession-container-layer a{
+.portfolio-container-layer a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -432,7 +432,7 @@ span{
     border-radius: 50%;
 
 }
-.profession-container-layer a i{
+.portfolio-container-layer a i{
     font-size: 2rem;
 }
 
